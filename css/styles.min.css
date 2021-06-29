@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500.css);
+body {
+  margin: auto auto;
+  padding: 0;
+}
+.app___2khK2 {
+  overflow: hidden;
+  position: relative;
+  display: table-cell;
+  font-size: 0;
+  height: 100vh;
+  margin: auto auto;
+  vertical-align: middle;
+  width: 100vw;
+  /* General styles */
+}
+.app___2khK2 h3 {
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 500;
+  margin: auto auto 10px auto;
+  text-align: center;
+}
+.app___2khK2 h4 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin: 0 auto 5px auto;
+}
+.app___2khK2 p {
+  font-family: 'Roboto';
+  font-size: 13px;
+  line-height: 17px;
+  margin: 0 auto 0 auto;
+}
+.app___2khK2 a {
+  color: #000;
+}
+.app___2khK2 .map_container___22zRx {
+  margin: auto auto;
+  width: 800px;
+}
+.app___2khK2 .map_container___22zRx svg {
+  display: block;
+  margin: auto auto;
+}
+.app___2khK2 .map_container___22zRx svg .path___3EPLl {
+  stroke-width: 0.5px;
+  stroke: #999;
+  transition: fill 0s linear;
+}
+.app___2khK2 .map_container___22zRx svg .kosovo___1TWRI {
+  stroke-dasharray: 3,3;
+  stroke-width: 0.5px;
+  z-index: 99;
+  stroke: #999;
+  transition: fill 0s linear;
+}
+.app___2khK2 .map_container___22zRx svg .datetime___1cLsC,
+.app___2khK2 .map_container___22zRx svg .city___2UUAt {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 0 0 #000;
+}
+.app___2khK2 .map_container___22zRx svg .city___2UUAt {
+  text-transform: uppercase;
+}
+.app___2khK2 .clearfix___1yHqr {
+  zoom: 1;
+}
+.app___2khK2 .clearfix___1yHqr:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.app___2khK2 .ss-terms___dMEZ6 {
+  margin: 40px auto auto auto;
+  max-width: 450px;
+}
+.app___2khK2 .meta___3gcNx {
+  color: #333;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0 10px 40px 10px;
+}
+.app___2khK2 .clear_both___a0DL_ {
+  clear: both;
+}
+.app___2khK2 .hidden___1aMNf {
+  display: none;
+}
+.app___2khK2 .nowrap___2n1o8 {
+  white-space: nowrap;
+}
+
