@@ -7,10 +7,13 @@ import * as d3 from 'd3';
 
 import { BE,CH,DE,DK,ES,IT,SE,CZ,UA } from 'round-flags';
 
+// https://svgcrop.com/
+import GB_EN from './../../media/img/uk-en-circle-01.png';
+
 let flags = {};
 flags['BE'] = BE;
 flags['CH'] = CH;
-flags['DE'] = DE;
+flags['EN'] = GB_EN;
 flags['DK'] = DK;
 flags['ES'] = ES;
 flags['IT'] = IT;
@@ -83,14 +86,13 @@ class App extends Component {
       svg.selectAll('image').data(this.state.data)
         .enter()
         .append('svg:image')
-        // .attr('xlink:href', path_prefix + '/img/stadium.png')
         .attr('xlink:href', (d,i) => {
           return flags[d.country];
         })
         .attr('width', 50)
         .attr('height', 50)
         .attr('class', (d, i) => {
-          return style.stadium + ' stadium_' + d.id;
+          return style.flag + ' stadium_' + d.id;
         })
         .attr('x', (d, i) => {
           return (d.position !== 'home') ? projection([d.lon, d.lat])[0] - 50 : projection([d.lon, d.lat])[0] + 5;
