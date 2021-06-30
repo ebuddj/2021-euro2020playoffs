@@ -55,6 +55,9 @@ body {
   stroke: #999;
   transition: fill 0s linear;
 }
+.app___2khK2 .map_container___22zRx svg .flag___1qElO {
+  filter: drop-shadow(0px 0px 1px #000);
+}
 .app___2khK2 .map_container___22zRx svg .datetime___1cLsC,
 .app___2khK2 .map_container___22zRx svg .city___2UUAt {
   color: rgba(0, 0, 0, 0.8);
