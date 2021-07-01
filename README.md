@@ -4,9 +4,9 @@
 
 ## Euro 2020 playoffs (EBU)
 
-* [EEST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=eest)), Eastern European summer time
+* [EEST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=eest), Eastern European summer time
 * [CEST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=cest), Central European summer time
-* [BST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=bst)), British summer time
+* [BST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=bstz), British summer time
 
 **Sources**
 * [Marca](https://www.marca.com/en/football/uefa-euro/2021/06/26/60d7a04fca47415d468b45ce.html)
