@@ -1,0 +1,9 @@
+id,position,country,country_abbr,city,name,capacity,lat,lon,country,date,time
+1,home,Germany,DE,Munich,Allianz Arena,75000,48.218764,11.6225668,BE,Friday,20:00
+1,away,Germany,DE,Munich,Allianz Arena,75000,48.218764,11.6225668,IT,Friday,20:00
+2,home,Italy,IT,Rome,Stadio Olimpico,70634,41.933304,12.453698,UA,Saturday,20:00
+2,away,Italy,IT,Rome,Stadio Olimpico,70634,41.933304,12.453698,EN,Saturday,20:00
+3,home,Azerbaijan,AZ,Baku,Olympic Stadium,68700,40.429958,49.9174133,CZ,Saturday,17:00
+3,away,Azerbaijan,AZ,Baku,Olympic Stadium,68700,40.429958,49.9174133,DK,Saturday,17:00
+4,home,Russia,RU,St. Petersburg,Krestovsky Stadium,68134,59.972728,30.2192158,CH,Friday,17:00
+4,away,Russia,RU,St. Petersburg,Krestovsky Stadium,68134,59.972728,30.2192158,ES,Friday,17:00
