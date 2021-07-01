@@ -27,6 +27,13 @@ const projection = d3.geoAzimuthalEquidistant().center([50,63]).scale(820);
 
 let svg, g, path;
 
+function getHashValue(key) {
+  let matches = location.hash.match(new RegExp(key+'=([^&]*)'));
+  return matches ? matches[1] : null;
+}
+
+const timezone = getHashValue('timezone') ? getHashValue('timezone') : 'cest';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +42,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    d3.csv('./data/data - data.csv').then((data) => {
+    d3.csv('./data/data - ' + timezone + '.csv').then((data) => {
       this.setState((state, props) => ({
         data:data
       }), () => this.drawMap());
@@ -112,7 +119,7 @@ class App extends Component {
         .attr('y', (d, i) => {
           return projection([d.lon, d.lat])[1] - 35;
         }).html((d, i) => {
-          return '<tspan class="'+style.city+'">' + d.city + '</tspan><tspan class="'+style.datetime+'"> ' + d.date + ' ' + d.time + '<tspan>' ;
+          return (d.position ==='home') ? '<tspan class="' + style.city + '">' + d.city + '</tspan><tspan class="' + style.datetime + '"> ' + d.date + ' ' + d.time + '<tspan>' : '';
         });
     });
   }

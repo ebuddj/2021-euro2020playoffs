@@ -2,13 +2,17 @@
 
 **Live demo** https://ebuddj.github.io/2021-euro2020playoffs/
 
-## Project title
+## Euro 2020 playoffs (EBU)
+
+* [EEST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=eest)), Eastern European summer time
+* [CEST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=cest), Central European summer time
+* [BST](https://ebuddj.github.io/2021-euro2020playoffs/#timezone=bst)), British summer time
 
 **Sources**
 * [Marca](https://www.marca.com/en/football/uefa-euro/2021/06/26/60d7a04fca47415d468b45ce.html)
 
 **EBU links**
-* []()
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/1df89cae3fee5b6f7eb146674d511aed/2021_20027399)
 
 **Used by**
 * []()
