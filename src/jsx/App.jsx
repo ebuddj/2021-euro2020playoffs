@@ -23,7 +23,7 @@ flags['UA'] = UA;
 
 import constants from './Constants.jsx';
 
-const projection = d3.geoAzimuthalEquidistant().center([50,63]).scale(820);
+const projection = d3.geoAzimuthalEquidistant().center([30,63]).scale(820);
 
 let svg, g, path;
 
@@ -105,7 +105,7 @@ class App extends Component {
           return (d.position !== 'home') ? projection([d.lon, d.lat])[0] - 50 : projection([d.lon, d.lat])[0] + 5;
         })
         .attr('y', (d, i) => {
-          return projection([d.lon, d.lat])[1] - 25;
+          return (d.id !== '1') ? projection([d.lon, d.lat])[1] - 55 : projection([d.lon, d.lat])[1] + 5;
         });
 
       svg.selectAll('text').data(this.state.data)
@@ -117,7 +117,7 @@ class App extends Component {
           return projection([d.lon, d.lat])[0];
         })
         .attr('y', (d, i) => {
-          return projection([d.lon, d.lat])[1] - 35;
+           return (d.id !== '1') ? projection([d.lon, d.lat])[1] - 70 : projection([d.lon, d.lat])[1] + 85;
         }).html((d, i) => {
           return (d.position ==='home') ? '<tspan class="' + style.city + '">' + d.city + '</tspan><tspan class="' + style.datetime + '"> ' + d.date + ' ' + d.time + '<tspan>' : '';
         });

@@ -10,6 +10,7 @@
 
 **Sources**
 * [Marca](https://www.marca.com/en/football/uefa-euro/2021/06/26/60d7a04fca47415d468b45ce.html)
+* [Marca](https://www.marca.com/en/football/uefa-euro/2021/07/02/60df83ab22601d79048b464c.html)
 
 **EBU links**
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/1df89cae3fee5b6f7eb146674d511aed/2021_20027399)
