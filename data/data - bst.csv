@@ -1,5 +1,3 @@
 id,position,country,country_abbr,city,name,capacity,lat,lon,country,date,time
-1,away,United Kingdom,UK,London,Wembley Stadium,90000,51.5560247,-0.2818064,IT,Tuesday,20:00
-1,home,United Kingdom,UK,London,Wembley Stadium,90000,51.5560247,-0.2818064,ES,Tuesday,20:00
-2,away,United Kingdom,UK,London,Wembley Stadium,90000,51.5560247,-0.2818064,EN,Wednesday,20:00
-2,home,United Kingdom,UK,London,Wembley Stadium,90000,51.5560247,-0.2818064,DK,Wednesday,20:00
+1,home,United Kingdom,UK,London,Wembley Stadium,90000,51.5560247,-0.2818064,IT,Sunday,20:00
+2,away,United Kingdom,UK,London,Wembley Stadium,90000,51.5560247,-0.2818064,EN,Sunday,20:00
