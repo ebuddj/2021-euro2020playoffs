@@ -5,21 +5,14 @@ import * as topojson from 'topojson-client';
 
 import * as d3 from 'd3';
 
-import { BE,CH,DE,DK,ES,IT,SE,CZ,UA } from 'round-flags';
+import { IT } from 'round-flags';
 
 // https://svgcrop.com/
 import GB_EN from './../../media/img/uk-en-circle-01.png';
 
 let flags = {};
-flags['BE'] = BE;
-flags['CH'] = CH;
-flags['EN'] = GB_EN;
-flags['DK'] = DK;
-flags['ES'] = ES;
 flags['IT'] = IT;
-flags['SE'] = SE;
-flags['CZ'] = CZ;
-flags['UA'] = UA;
+flags['EN'] = GB_EN;
 
 import constants from './Constants.jsx';
 
@@ -96,16 +89,16 @@ class App extends Component {
         .attr('xlink:href', (d,i) => {
           return flags[d.country];
         })
-        .attr('width', 50)
-        .attr('height', 50)
+        .attr('width', 100)
+        .attr('height', 100)
         .attr('class', (d, i) => {
           return style.flag + ' stadium_' + d.id;
         })
         .attr('x', (d, i) => {
-          return (d.position !== 'home') ? projection([d.lon, d.lat])[0] - 50 : projection([d.lon, d.lat])[0] + 5;
+          return (d.position !== 'away') ? projection([d.lon, d.lat])[0] - 100 : projection([d.lon, d.lat])[0] + 5;
         })
         .attr('y', (d, i) => {
-          return (d.id !== '1') ? projection([d.lon, d.lat])[1] - 55 : projection([d.lon, d.lat])[1] + 5;
+          return projection([d.lon, d.lat])[1] - 50;
         });
 
       svg.selectAll('text').data(this.state.data)
@@ -117,9 +110,9 @@ class App extends Component {
           return projection([d.lon, d.lat])[0];
         })
         .attr('y', (d, i) => {
-           return (d.id !== '1') ? projection([d.lon, d.lat])[1] - 70 : projection([d.lon, d.lat])[1] + 85;
+          return projection([d.lon, d.lat])[1] - 60;
         }).html((d, i) => {
-          return (d.position ==='home') ? '<tspan class="' + style.city + '">' + d.city + '</tspan><tspan class="' + style.datetime + '"> ' + d.date + ' ' + d.time + '<tspan>' : '';
+          return (d.position ==='away') ? '<tspan class="' + style.city + '">' + d.city + '</tspan><tspan class="' + style.datetime + '"> ' + d.date + ' ' + d.time + '<tspan>' : '';
         });
     });
   }
